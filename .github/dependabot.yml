@@ -3,10 +3,18 @@ version: 2
 updates:
   - package-ecosystem: pip
     directory: /{{cookiecutter.project_slug}}/
+    groups:
+      actions:
+        patterns:
+          - "*"
     schedule:
       interval: daily
 
   - package-ecosystem: github-actions
+    groups:
+      actions:
+        patterns:
+          - "*"
     directories:
         - "/"
         - "{{cookiecutter.project_slug}}"
