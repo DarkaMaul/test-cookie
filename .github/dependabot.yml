@@ -10,8 +10,7 @@ updates:
         patterns:
           - "*"
     directories:
-        - "/"
+        # - "/"
         - "{{cookiecutter.project_slug}}/.github/workflows"
-        - "{{cookiecutter.project_slug}}/.github/workflows/zizmor.yml"
     schedule:
       interval: daily
