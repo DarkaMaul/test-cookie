@@ -2,11 +2,7 @@ version: 2
 
 updates:
   - package-ecosystem: pip
-    directory: /{{cookiecutter.project_slug}}/
-    groups:
-      actions:
-        patterns:
-          - "*"
+    directory: /test-repo/
     schedule:
       interval: daily
 
