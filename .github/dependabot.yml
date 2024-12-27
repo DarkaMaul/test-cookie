@@ -4,21 +4,13 @@ updates:
   # We cannot update the python dependencies of the template project because the `pyproject.toml` is not parseable.
 
   # Update GitHub Actions of both the template and the repo
-#  - package-ecosystem: github-actions
-#    groups:
-#      actions:
-#        patterns:
-#          - "*"
-#    directories:
-#        - "/"
-#    schedule:
-#      interval: daily
+  - package-ecosystem: github-actions
+    directories:
+        - "/"
+    schedule:
+      interval: daily
 
   - package-ecosystem: github-actions
-    groups:
-      actions:
-        patterns:
-          - "*"
     directories:
         - "{{cookiecutter.project_slug}}/.github/workflows"
     schedule:
